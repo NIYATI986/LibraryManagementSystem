@@ -4,7 +4,7 @@ public class book{
     private String author;
     private boolean isIssued;
 
-    //Constructors
+    //Constructor
     public book(String id, String title, String author, boolean isIssued){
         this.id=id;
         this.title=title;
