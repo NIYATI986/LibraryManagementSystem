@@ -1,0 +1,103 @@
+:root{
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+body.darkmode{
+  --base-color: #070b1d;
+  --base-variant: #101425;
+  --text-color: #ffffff;
+  --secondary-text: #a4a5b8;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+    color:var(--text-color);
+    text-decoration: none;
+}
+.link:hover{
+    color: var( --accent-color);
+}
+
+html{
+  font-family: poppins;
+}
+body{
+  min-height: 100vh;
+  background-color: var(--base-color);
+  color: var(--text-color);
+}
+#first{
+    padding: 10px 10px ;
+    height : 20px;
+    width: 175vh;
+    background-color: var(--base-variant);
+}
+
+#aboutus-div{
+  padding: 10px 10px ;
+    height : 150px;
+    width: 175vh;
+    background-color: var(--base-variant);
+}
+/* home.html */
+#books-section , #paid-section , #pdf-section{
+  padding: 10px 10px ;
+    height : 200px;
+    width: 175vh;
+    background-color: var(--base-variant);
+}
+
+#aboutus-section{
+  padding: 10px 10px ;
+    height : 200px;
+    width: 175vh;
+    background-color: var(--base-variant);
+}
+
+li{
+    display: inline;
+    padding: 50px;
+}
+.wholeCode{
+      margin: 50px;
+      padding:10px;
+      width:600px;
+      height:150px;
+      border-radius: 10px;
+      background-color: var(--base-variant);
+    }
+
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+ #theme-switch svg{
+  fill: var(--primary-color);
+}
+ #theme-switch svg:last-child{
+  display: none;
+}
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
